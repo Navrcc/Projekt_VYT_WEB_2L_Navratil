@@ -1,0 +1,176 @@
+/* odstrani styly prohlizece */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background: #009afbff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #444;
+    color: #fff;
+    padding: 15px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 60px 0 0; 
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background: #555;
+    padding-left: 20px;
+}
+
+main {
+    margin-left: 220px; 
+    padding: 80px 20px 20px 20px; 
+    background-color: #ffffff;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:justify ;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: calc(100% - 200px);
+    margin-left: 200px; 
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #009afbff;
+}
+ 
+img {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    
+}
+.letak {
+    width: 35%;
+    height: auto;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.letak:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+section:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a {
+    transition: padding-left 0.3s ease;
+}
+
+img:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a.active {
+    color: #009afbff; 
+}
+@media screen and (max-width: 890px) {
+    nav {
+        width: 100%;
+        position: relative;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    footer {
+        width: 100%;
+        margin-left: 0;
+    }
+    .responzivni_video_obrazek {
+        position: relative;
+        width: 100%;
+        padding-bottom: 30%;
+        height: 0;
+    }
+    
+    .responzivni_video_obrazek iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
